@@ -16,7 +16,16 @@
   <body>
     <div class="wrapper">
 
+
         <%= yield %>
+    
+        <form method="GET" action="/pitches/index">
+      <input type="submit" value="index page"/>
+    </form>
+    <form method="GET" action="/pitches/new">
+      <input type="submit" value="new pitch"/>
+    </form>
+    
 
       <footer class="branding">
         <small>&copy; 2019 <strong>Startup</strong></small>

@@ -1,0 +1,8 @@
+<h1>Index of available pitches</h1>
+<% @pitches.each do |pitch| %>
+    <p><a href="/pitches/<%= pitch.id %>"><%= pitch.title %></a></p>
+    <% end %>
+<form method="GET" action="/pitches/results"/>
+<input name="search_industry" type="text" value="Industry"/>
+<input type="submit" value="Search by industry"/>
+</form>

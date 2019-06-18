@@ -1,0 +1,8 @@
+<h1>Edit your pitch entry</h1>
+<form method="POST" action="/pitches/<%=@pitch.id%>">
+<input type="hidden" name="_method" value="PATCH">
+<p>Pitch title: <input name="title" type="text" value="<%=@pitch.title%>"/></p>
+<p>Pitch industry <input name="industry" type="text" value= "<%=@pitch.industry%>"/></p>
+<p>Funding: <input name="funding" type="number" value="<%=@pitch.funding%>"/></p>
+<input type="submit"/>
+</form>

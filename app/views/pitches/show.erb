@@ -1,0 +1,10 @@
+<h1>Pitch title: <%= @pitch.title %></h1>
+<p>Industry: <%= @pitch.industry %></p>
+<p>Funding required: $<%= @pitch.funding %></p>
+<form method="GET" action="/pitches/<%= @pitch.id %>/edit">
+<input type="submit", value="edit"/>
+</form>
+<form method="POST" action="/pitches/<%= @pitch.id %>">
+<input type="hidden" name="_method" value="DELETE"/>
+<input type="submit" value="delete"/>
+</form>

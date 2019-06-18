@@ -6,4 +6,5 @@ end
 
 # How do we connect the PitchesController here?
 
+use PitchesController
 run ApplicationController
